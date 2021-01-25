@@ -1,18 +1,14 @@
 package com.wiki.tests;
-
 import com.aventstack.extentreports.Status;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.util.ArrayList;
-import java.util.Arrays;
+import org.testng.asserts.SoftAssert;
 import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 public class WikiPageTest extends BaseTests {
     List<String> contentList, headerList;
+    SoftAssert softAssertion= new SoftAssert();
     @Test(priority = 1)
     public void verifyAllTheHeadingNamesListedInContentBox(){
         // Given
@@ -26,6 +22,7 @@ public class WikiPageTest extends BaseTests {
 
              // Then
         assertThat(contentList).isEqualTo(headerList);
+        softAssertion.assertAll();
     }
 
     @Test(priority = 2)
@@ -39,11 +36,12 @@ public class WikiPageTest extends BaseTests {
        List<Integer> actualResponseResult = wikipediaPage.checkFunctioningHyperLink();
 
        //Then
-        reportUtils.addTestLogs(Status.INFO,"Veirify all the response code of all the hyper link are equal to 200");
+        reportUtils.addTestLogs(Status.INFO,"Verify all the response code of all the hyper link are equal to 200");
        for(Integer rescode:actualResponseResult){
            reportUtils.addTestLogs(Status.FAIL.INFO,"Hyperlink status "+rescode);
            assertTrue(rescode.equals(expectedResponseResult),"link is broken");
        }
+        softAssertion.assertAll();
 
     }
 
@@ -59,7 +57,9 @@ public class WikiPageTest extends BaseTests {
 
         // Then
         reportUtils.addTestLogs(Status.INFO,"Comparing the text");
-        assertThat(actualText).isEqualTo(expectedText);
+        //assertThat(actualText).isEqualTo(expectedText);
+        assertEquals(actualText,expectedText);
+        softAssertion.assertAll();
     }
 
     @Test(priority = 4)

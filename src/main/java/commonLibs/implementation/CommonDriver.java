@@ -39,7 +39,7 @@ public class CommonDriver {
 
     public CommonDriver(String browserType) throws Exception {
               pageLoadTimeout=10;
-              elementDetectionTimeout=5;
+              elementDetectionTimeout=10;
         currentWorkingDirectory = System.getProperty("user.dir");
         if(browserType.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver",currentWorkingDirectory+"/drivers/chromedriver");

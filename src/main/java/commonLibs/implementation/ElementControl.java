@@ -5,21 +5,37 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ElementControl {
     WebDriver driver;
     public ElementControl(WebDriver driver){
         this.driver=driver;
     }
-    public void clickElement
-            (WebElement element){
-        element.click();
+
+    protected void waitUntilElementIsClickable(WebElement element){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+    protected void waitUntilElementIsVisible(WebElement element){
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
     public void setText(WebElement element,String text){
+        waitUntilElementIsClickable(element);
         element.sendKeys(text);
     }
+    public void clickElement(WebElement element){
+        waitUntilElementIsClickable(element);
+        element.click();
+    }
+    protected void clickLink(WebElement element) {
+        waitUntilElementIsVisible(element);
+    }
     public String getText(WebElement element){
+        waitUntilElementIsVisible(element);
        return element.getText();
     }
     public void clearText(WebElement element){

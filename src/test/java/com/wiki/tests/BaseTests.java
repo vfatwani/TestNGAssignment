@@ -53,8 +53,6 @@ public class BaseTests {
         if(result.getStatus()==ITestResult.FAILURE){
              reportUtils.addTestLogs(Status.FAIL,"One or more step failed");
             screenShot.captureAndSaveScreenShot(screenShotFileName);
-            reportUtils.attachScreeShotToReport(screenShotFileName);
-
     }
     }
     @AfterClass
