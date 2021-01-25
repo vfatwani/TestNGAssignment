@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-25T01:53:50 PST" name="com.wiki.tests.WikiPageTest" finished-at="2021-01-25T01:54:04 PST" duration-ms="13193">
+    <groups>
+    </groups>
+    <test started-at="2021-01-25T01:53:50 PST" name="Command line test" finished-at="2021-01-25T01:54:04 PST" duration-ms="13193">
+      <class name="com.wiki.tests.WikiPageTest">
+        <test-method is-config="true" signature="preSetUp()[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:50 PST" name="preSetUp" finished-at="2021-01-25T01:53:50 PST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:50 PST" name="setUp" finished-at="2021-01-25T01:53:56 PST" duration-ms="6023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAllTheHeadingNamesListedInContentBox()[pri:1, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:56 PST" name="verifyAllTheHeadingNamesListedInContentBox" finished-at="2021-01-25T01:53:57 PST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTheHeadingNamesListedInContentBox -->
+        <test-method is-config="true" signature="postTestAction(org.testng.ITestResult)[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:57 PST" name="postTestAction" finished-at="2021-01-25T01:53:57 PST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTheHeadingNamesListedInContentBox status=SUCCESS method=WikiPageTest.verifyAllTheHeadingNamesListedInContentBox()[pri:1, instance:com.wiki.tests.WikiPageTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestAction -->
+        <test-method signature="headingListedInContentBoxHaveFunctioningHyperlinks()[pri:2, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:57 PST" name="headingListedInContentBoxHaveFunctioningHyperlinks" finished-at="2021-01-25T01:53:57 PST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headingListedInContentBoxHaveFunctioningHyperlinks -->
+        <test-method is-config="true" signature="postTestAction(org.testng.ITestResult)[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:57 PST" name="postTestAction" finished-at="2021-01-25T01:53:57 PST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=headingListedInContentBoxHaveFunctioningHyperlinks status=SUCCESS method=WikiPageTest.headingListedInContentBoxHaveFunctioningHyperlinks()[pri:2, instance:com.wiki.tests.WikiPageTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestAction -->
+        <test-method signature="verifyPersonifiedzconceptsNikeHasAPopup()[pri:3, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:53:57 PST" name="verifyPersonifiedzconceptsNikeHasAPopup" finished-at="2021-01-25T01:54:03 PST" duration-ms="5253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPersonifiedzconceptsNikeHasAPopup -->
+        <test-method signature="verifyInThePersonifiedConceptsClickOnNikeDisplaysAFamilyTree()[pri:4, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:54:03 PST" name="verifyInThePersonifiedConceptsClickOnNikeDisplaysAFamilyTree" finished-at="2021-01-25T01:54:03 PST" duration-ms="703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInThePersonifiedConceptsClickOnNikeDisplaysAFamilyTree -->
+        <test-method is-config="true" signature="postTestAction(org.testng.ITestResult)[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:54:03 PST" name="postTestAction" finished-at="2021-01-25T01:54:03 PST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPersonifiedzconceptsNikeHasAPopup status=SUCCESS method=WikiPageTest.verifyPersonifiedzconceptsNikeHasAPopup()[pri:3, instance:com.wiki.tests.WikiPageTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestAction -->
+        <test-method is-config="true" signature="postTestAction(org.testng.ITestResult)[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:54:03 PST" name="postTestAction" finished-at="2021-01-25T01:54:03 PST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInThePersonifiedConceptsClickOnNikeDisplaysAFamilyTree status=SUCCESS method=WikiPageTest.verifyInThePersonifiedConceptsClickOnNikeDisplaysAFamilyTree()[pri:4, instance:com.wiki.tests.WikiPageTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestAction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:54:03 PST" name="tearDown" finished-at="2021-01-25T01:54:04 PST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="postTearDown()[pri:0, instance:com.wiki.tests.WikiPageTest@42d8062c]" started-at="2021-01-25T01:54:04 PST" name="postTearDown" finished-at="2021-01-25T01:54:04 PST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTearDown -->
+      </class> <!-- com.wiki.tests.WikiPageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.wiki.tests.WikiPageTest -->
+</testng-results>

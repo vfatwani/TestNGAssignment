@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/sumandana/IdeaProjects/TestNGAssignment/src/test/java/com/wiki/tests/WikiPageTest.java">
+        <classes>
+            <class name="com.wiki.tests.WikiPageTest">
+                <methods>
+                    <include name="verifyAllTheHeadingNamesListedInContentBox"/>
+                    <include name="headingListedInContentBoxHaveFunctioningHyperlinks"/>
+                    <include name="verifyPersonifiedzconceptsNikeHasAPopup"/>
+                    <include name="verifyInThePersonifiedConceptsClickOnNikeDisplaysAFamilyTree"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
